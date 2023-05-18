@@ -90,30 +90,3 @@ window.addEventListener("scroll", function () {
   }
 
 });
-
-
- document.addEventListener("DOMContentLoaded", function() {
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const foodMenuItems = document.querySelectorAll(".food-menu-item");
-
-      filterButtons.forEach(function(button) {
-        button.addEventListener("click", function() {
-          const category = this.getAttribute("data-category");
-
-          // Afficher les éléments de menu correspondant à la catégorie sélectionnée et masquer les autres
-          foodMenuItems.forEach(function(item) {
-            if (category === "all" || item.getAttribute("data-category") === category) {
-              item.style.display = "block";
-            } else {
-              item.style.display = "none";
-            }
-          });
-
-          // Ajouter ou supprimer la classe "active" pour mettre en évidence le bouton sélectionné
-          filterButtons.forEach(function(btn) {
-            btn.classList.remove("active");
-          });
-          this.classList.add("active");
-        });
-      });
-    });

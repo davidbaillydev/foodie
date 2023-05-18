@@ -1142,7 +1142,7 @@ body.active { overflow: hidden; }
 
 .footer-top {
   position: relative;
-  padding-block: 120px;
+  padding-block: 190px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -1150,11 +1150,11 @@ body.active { overflow: hidden; }
 }
 
 .footer-top::after {
-  content: url(../images/delivery-boy.svg);
+  content: url(../images/delivery-boy-4.svg);
   position: absolute;
-  bottom: -11px;
+  bottom: -175px;
   left: -160px;
-  width: 160px;
+  width: 60px;
   animation: running-cycle 20s linear infinite;
 }
 
